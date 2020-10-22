@@ -1,1 +1,2 @@
 python scripts to visualize the dataset and to convert the step files to graph files.
+dependencies: pythonocc-core, pythonocc-utils
