@@ -1,0 +1,4 @@
+Here are the dataset of CAD models in step file format. 
+In the step file, each face is assigned an id.
+Face labels are stored in another file with the same prefix as the step file and an extention name 'face_truth'.
+For example, "1-7-10-11-19.step" represents the CAD model, and "1-7-10-11-19.face_truth" is the label file.
