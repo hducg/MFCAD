@@ -69,7 +69,6 @@ def shape_with_fid_from_step(filename):
     id_map = {}
     fset = list_face(shape)
     # read the face names
-    cnt = 0
     for face in fset:
         item = treader.EntityFromShapeResult(face, 1)
         if item is None:
@@ -80,10 +79,9 @@ def shape_with_fid_from_step(filename):
         if name:
             try:
                 nameid = int(name)
+                id_map[face] = nameid
             except ValueError:
-                nameid = cnt
-                cnt += 1
-            id_map[face] = nameid
+                print(face)
 
     return shape, id_map
 
